@@ -1,4 +1,4 @@
-# swarmTopologySimulator
+# swarmTopologyChangeProtocolSimulator
 
 This is the implementation of the protocol for handling topology changes in swarms, proposed in the master thesis: Design and implementation of a protocol for handling topology changes in swarms.
 
