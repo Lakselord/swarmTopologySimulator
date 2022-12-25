@@ -8,8 +8,8 @@ Created on Wed Oct 12 15:04:21 2022
 import random
 from nodeWeightVersion import Node
 from animatedScatter import AnimatedScatter
-from mobilityModel import checkInput
-from mobilityModel import animationData
+from helper import checkInput
+from helper import animationData
 from swarmManager import swarmManager
 import matplotlib.pyplot as plt
 import json
@@ -128,7 +128,7 @@ if __name__ == '__main__':
         for b in a:
             swarmIDs.append(b['swarmID'])
             
-    for i in range(72000):
+    for i in range(SimulationTime*60):
         timestep = swarmIDs[0:20]
         del swarmIDs[:20]
         timestep.sort()
@@ -146,7 +146,7 @@ if __name__ == '__main__':
     for n in numberOfSwarms:
         totalSwarms = totalSwarms + n
         
-    laststep = data[71999]['Data']
+    laststep = data[(SimulationTime*60)-1]['Data']
     
     for i in laststep:
         batteryLevels.append(i['energyLevel'])
