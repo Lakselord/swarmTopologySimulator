@@ -10,3 +10,4 @@ To be able to run the code do the following:
 When running simulation using the simulator do the following:
 1. Start by running the testProgram script.
 2. Enter the parameters to be used in the simulation. 
+3. Wait for simulation to finish, indicated by when animation of simulation run pops up
